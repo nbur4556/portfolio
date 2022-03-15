@@ -12,7 +12,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.page}>
-        <Image className={styles.bgImage} src="/mountain_bg.png" alt="Background mountain image." layout="fill" />
+        <Image
+          className={styles.bgImage}
+          src="/mountain_bg.png"
+          alt="Background mountain image."
+          layout="fill"
+        />
 
         <nav>
           <ul>
@@ -23,11 +28,14 @@ export default function Home() {
         </nav>
 
         <h1>Hi, I&apos;m Nick Burt</h1>
-        <p>
-          I am a full stack web developer. I have a passion for creating beautiful
-          and responsive web applications, powered by scalable web servers and databases.
-        </p>
-        <p>Javascript - React - Node - MongoDB - MySQL</p>
+
+        <section className={styles.content}>
+          <p>
+            I am a full stack web developer. I have a passion for creating beautiful
+            and responsive web applications, powered by scalable web servers and databases.
+          </p>
+          <p>Javascript - React - Node - MongoDB - MySQL</p>
+        </section>
       </main>
     </div>
   );
