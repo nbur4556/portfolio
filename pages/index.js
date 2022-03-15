@@ -10,7 +10,20 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello NextJS</h1>
+        <nav>
+          <ul>
+            <li>Portfolio</li>
+            <li>Contact</li>
+            <li>Resume</li>
+          </ul>
+        </nav>
+
+        <h1>Hi, I&apos;m Nick Burt</h1>
+        <p>
+          I am a full stack web developer. I have a passion for creating beautiful
+          and responsive web applications, powered by scalable web servers and databases.
+        </p>
+        <p>Javascript - React - Node - MongoDB - MySQL</p>
       </main>
     </div>
   )
