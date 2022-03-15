@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -9,9 +11,33 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Hello NextJS</h1>
+      <main className={styles.page}>
+        <Image
+          className={styles.bgImage}
+          src="/mountain_bg.png"
+          alt="Background mountain image."
+          layout="fill"
+        />
+
+        <nav>
+          <ul>
+            <li>Portfolio</li>
+            <li>Contact</li>
+            <li>Resume</li>
+          </ul>
+        </nav>
+
+        <h1>Hi, I&apos;m Nick Burt</h1>
+
+        <section className={styles.content}>
+          <p>
+            I am a full stack web developer. I have a passion for creating beautiful
+            and responsive web applications, powered by scalable web servers and databases.
+          </p>
+          <hr />
+          <p>Javascript - React - Node - MongoDB - MySQL</p>
+        </section>
       </main>
     </div>
-  )
+  );
 }
