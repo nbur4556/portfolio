@@ -34,6 +34,7 @@ export default function Home() {
             I am a full stack web developer. I have a passion for creating beautiful
             and responsive web applications, powered by scalable web servers and databases.
           </p>
+          <hr />
           <p>Javascript - React - Node - MongoDB - MySQL</p>
         </section>
       </main>
