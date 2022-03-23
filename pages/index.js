@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
 // Components
@@ -27,13 +26,6 @@ export default function Home() {
           <hr />
           <p>Javascript - React - Node - MongoDB - MySQL</p>
         </section>
-
-        <Image
-          className={styles.bgImage}
-          src="/mountain_bg.png"
-          alt="Background mountain image."
-          layout="fill"
-        />
       </main>
     </div>
   );
