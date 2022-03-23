@@ -1,6 +1,8 @@
+import { PortfolioPost } from "../../components/PortfolioPost";
+
 const Portfolio = () => {
     return <main>
-        Portfolio
+        <PortfolioPost />
     </main>
 }
 
