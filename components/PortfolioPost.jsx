@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const PortfolioPost = (props) => {
     const { title, techList, websiteLink, repoLink, imageUrl, imageAlt } = props;
 
@@ -17,7 +15,5 @@ export const PortfolioPost = (props) => {
             <a href={websiteLink} target="_blank" rel="noreferrer">Website</a>
             <a href={repoLink} target="_blank" rel="noreferrer">Repository</a>
         </section>
-
-        <Image src={imageUrl} alt={imageAlt} width="200px" height="100px" />
     </article>
 }
