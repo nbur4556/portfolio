@@ -1,21 +1,23 @@
-export const PortfolioPost = () => {
-    return <artcile>
-        <h1>TITLE</h1>
+import Image from "next/image";
+
+export const PortfolioPost = (props) => {
+    const { title, techList, websiteLink, repoLink, imageUrl, imageAlt } = props;
+
+    return <article>
+        <h1>{title}</h1>
         <ul>
-            <li>Tec 1</li>
-            <li>Tec 2</li>
-            <li>Tec 3</li>
+            {techList.map((tech, i) => {
+                return <li key={i}>{tech}</li>
+            })}
         </ul>
 
         <section>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde accusantium excepturi
-                perspiciatis voluptatem, facere dolorum hic vero voluptate velit eligendi quisquam
-                est harum, fugiat pariatur error tenetur, beatae temporibus alias!</p>
+            {props.children}
 
-            <a>Website</a>
-            <a>Repository</a>
+            <a href={websiteLink} target="_blank" rel="noreferrer">Website</a>
+            <a href={repoLink} target="_blank" rel="noreferrer">Repository</a>
         </section>
 
-        <img />
-    </artcile>
+        <Image src={imageUrl} alt={imageAlt} width="200px" height="100px" />
+    </article>
 }
