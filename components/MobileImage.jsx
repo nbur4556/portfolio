@@ -1,8 +1,5 @@
-import Image from "next/image";
 import styles from '../styles/MobileImage.module.scss';
 
-export const MobileImage = ({ imageUrl, altText }) => {
-    return <section className={styles.mobileImage}>
-        <Image src={imageUrl} alt={altText} />
-    </section>
+export const MobileImage = ({ imageUrl }) => {
+    return <div className={styles.imageContainer} style={{ backgroundImage: `url(${imageUrl})` }} />
 }

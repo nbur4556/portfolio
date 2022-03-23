@@ -1,9 +1,6 @@
 import { PortfolioPost } from "../../components/PortfolioPost";
 import { MobileImage } from "../../components/MobileImage";
 
-// Images
-import tempImg from '../../public/mountain_bg.png';
-
 const Portfolio = () => {
     return <main>
         <PortfolioPost
@@ -13,7 +10,7 @@ const Portfolio = () => {
             repoLink="https://github.com/nbur4556/issue_reporter"
         >
             <p>Dev issue tracker is a resource for organizing bugs, issues, and features on development projects. The application features robust state management implementing React&apos;s Context API, making state easily accessible across the various components of the project.</p>
-            <MobileImage imageUrl={tempImg} altText="Mountain background temporary" />
+            <MobileImage imageUrl="/mountain_bg.png" altText="Mountain background temporary" />
         </PortfolioPost>
     </main>
 }

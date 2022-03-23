@@ -1,4 +1,10 @@
-.mobileImage {
+.imageContainer {
     width: 22rem;
     height: 48rem;
+
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 2rem;
+    
+    overflow: hidden;
 }
