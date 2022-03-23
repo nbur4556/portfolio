@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
+// Components
+import { NavigationBar } from '../components/NavigationBar';
+
 export default function Home() {
   return (
     <div>
@@ -12,20 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.page}>
-        <Image
-          className={styles.bgImage}
-          src="/mountain_bg.png"
-          alt="Background mountain image."
-          layout="fill"
-        />
-
-        <nav>
-          <ul>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
-          </ul>
-        </nav>
+        <NavigationBar />
 
         <h1>Hi, I&apos;m Nick Burt</h1>
 
@@ -37,6 +27,13 @@ export default function Home() {
           <hr />
           <p>Javascript - React - Node - MongoDB - MySQL</p>
         </section>
+
+        <Image
+          className={styles.bgImage}
+          src="/mountain_bg.png"
+          alt="Background mountain image."
+          layout="fill"
+        />
       </main>
     </div>
   );
