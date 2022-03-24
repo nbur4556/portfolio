@@ -5,7 +5,7 @@ export const PortfolioPost = (props) => {
     const { title, techList, websiteLink, repoLink, image } = props;
 
     return <article className={styles.portfolioPost}>
-        <MobileImage imageUrl={image.src} altText={image.txt} />
+        <MobileImage imageUrl={image.src} altText={image.txt} position={image.position} />
 
         <section className={styles.titleSection}>
             <h1>{title}</h1>
