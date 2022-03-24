@@ -4,7 +4,9 @@
     padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+    height: 100vh;
 
     div {
         grid-column: 2 / span 2;
