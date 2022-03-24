@@ -7,7 +7,7 @@
 
     height: 100vh;
 
-    background-image: url('/mountain_bg.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), $c_background_gradient_main 80%), url('/mountain_bg.png');
 
     nav {
         grid-column: 2 / span 1;
