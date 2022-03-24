@@ -1,0 +1,8 @@
+@import './colors';
+
+.page {
+    background-image: linear-gradient($c_background_light, $c_background_light), url('/mountain_bg_flip.png');
+    background-size: 120%;
+    background-position: center -20rem;
+    background-attachment: fixed;
+}
