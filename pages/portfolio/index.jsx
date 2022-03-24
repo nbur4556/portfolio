@@ -1,8 +1,8 @@
+import styles from '../../styles/Portfolio.module.scss';
 import { PortfolioPost } from "../../components/PortfolioPost";
-import { MobileImage } from "../../components/MobileImage";
 
 const Portfolio = () => {
-    return <main>
+    return <main className={styles.page}>
         <PortfolioPost title="Dev Issue Tracker"
             techList={['React', 'Sass', 'Node', 'Express', 'Mongoose', 'JWT']}
             websiteLink="https://devissuetracking.herokuapp.com/"
