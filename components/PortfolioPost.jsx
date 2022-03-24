@@ -2,10 +2,10 @@ import styles from '../styles/PortfolioPost.module.scss';
 import { MobileImage } from './MobileImage';
 
 export const PortfolioPost = (props) => {
-    const { title, techList, content, websiteLink, repoLink } = props;
+    const { title, techList, websiteLink, repoLink, image } = props;
 
     return <article className={styles.portfolioPost}>
-        <MobileImage imageUrl="/mountain_bg.png" altText="Mountain background temporary" />
+        <MobileImage imageUrl={image.src} altText={image.txt} />
 
         <section className={styles.titleSection}>
             <h1>{title}</h1>
