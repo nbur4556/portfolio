@@ -1,32 +1,27 @@
 import styles from '../styles/PortfolioPost.module.scss';
+import { MobileImage } from './MobileImage';
 
 export const PortfolioPost = (props) => {
-    const { title, techList } = props;
+    const { title, techList, content, websiteLink, repoLink } = props;
 
     return <article className={styles.portfolioPost}>
-        <h1>{title}</h1>
-        <ul>
-            {techList.map((tech, i) => {
-                return <li key={i}>{tech}</li>
-            })}
-        </ul>
+        <MobileImage imageUrl="/mountain_bg.png" altText="Mountain background temporary" />
 
-        <PortfolioPostContent
-            content={props.children}
-            websiteLink={props.websiteLink}
-            repoLink={props.repoLink}
-        />
+        <section className={styles.titleSection}>
+            <h1>{title}</h1>
+            <ul>
+                {techList.map((tech, i) => {
+                    return <li key={i}>{tech}</li>
+                })}
+            </ul>
+        </section>
 
+        <section className={styles.textSection}>
+            {props.children}
+            <section>
+                <a href={websiteLink} target="_blank" rel="noreferrer">Website</a>
+                <a href={repoLink} target="_blank" rel="noreferrer">Repository</a>
+            </section>
+        </section>
     </article>
-}
-
-const PortfolioPostContent = (props) => {
-    const { content, websiteLink, repoLink } = props
-
-    return <section>
-        {content}
-
-        <a href={websiteLink} target="_blank" rel="noreferrer">Website</a>
-        <a href={repoLink} target="_blank" rel="noreferrer">Repository</a>
-    </section>
 }
